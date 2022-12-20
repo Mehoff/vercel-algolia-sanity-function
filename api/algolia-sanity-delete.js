@@ -5,3 +5,5 @@ const handler = (req, res) => {
   res.status = 200;
   res.json({ message: "Delete", body: req.body });
 };
+
+module.exports = handler;
