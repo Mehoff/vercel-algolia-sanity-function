@@ -1,8 +1,8 @@
-import { VercelRequest, VercelResponse } from "@vercel/node";
+// import { VercelRequest, VercelResponse } from "@vercel/node";
 import algoliasearch from "algoliasearch";
 import sanityClient from "@sanity/client";
-import env from "dotenv";
-env.config();
+// import env from "dotenv";
+// env.config();
 
 const algolia = algoliasearch(
   process.env.ALGOLIA_APPLICATION_ID,
