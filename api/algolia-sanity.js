@@ -1,12 +1,7 @@
-// import { VercelRequest, VercelResponse } from "@vercel/node";
-
-// const indexer = require("sanity-algolia").default;
 const indexer = require("sanity-algolia").default;
-// import indexer from "sanity-algolia";
-import algoliasearch from "algoliasearch";
-import sanityClient from "@sanity/client";
-// import env from "dotenv";
-// env.config();
+
+const algoliasearch = require("algoliasearch");
+const sanityClient = require("@sanity/client");
 
 const algolia = algoliasearch(
   process.env.ALGOLIA_APPLICATION_ID,
@@ -60,4 +55,4 @@ const handler = (request, response) => {
     .then(() => response.status(200).send("OK"));
 };
 
-export default handler;
+module.exports = handler;
