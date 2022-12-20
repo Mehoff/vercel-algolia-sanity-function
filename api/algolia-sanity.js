@@ -1,4 +1,7 @@
 // import { VercelRequest, VercelResponse } from "@vercel/node";
+
+// const indexer = require("sanity-algolia").default;
+import indexer from "sanity-algolia";
 import algoliasearch from "algoliasearch";
 import sanityClient from "@sanity/client";
 // import env from "dotenv";
